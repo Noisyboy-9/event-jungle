@@ -1,0 +1,24 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin horizontal-vertical-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin button-hover-effect {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 1rem rgba($color-dark-purple, 0.3);
+}
+
+@mixin button-active-effect {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 0.5rem rgba($color-dark-purple, 0.1);
+}

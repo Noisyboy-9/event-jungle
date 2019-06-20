@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 15rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: $default-border-radius;
+
+  &--primary {
+    background-color: $color-light-purple;
+    color: $color-white;
+    transition: all 0.3s;
+
+    &:hover {
+      @include button-hover-effect;
+    }
+
+    &:active {
+      @include button-active-effect;
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $color-light-purple;
+    color: $color-light-purple;
+    transition: all 0.3s;
+
+    &:hover {
+      @include button-hover-effect;
+    }
+
+    &:active {
+      @include button-active-effect;
+    }
+  }
+}

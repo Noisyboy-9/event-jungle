@@ -1,0 +1,68 @@
+.navigation {
+  width: 100%;
+  @include clearfix;
+  margin-bottom: 5rem;
+  &__logo-box {
+    float: left;
+    width: 10rem;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__nav {
+    float: right;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    border-radius: $default-border-radius;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    &--active {
+      text-transform: uppercase;
+      background-color: $color-light-purple;
+      padding: 0.5rem 3rem;
+      transition: all 0.3s;
+
+      a {
+        color: $color-white;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+
+      &:hover {
+        transform: translate(-0.1rem);
+        box-shadow: 0 0.5rem 0.5rem rgba($color-light-purple, 0.3);
+      }
+
+      &:active {
+        @include button-active-effect;
+        transform: translate(0rem);
+        box-shadow: 0 0.1rem 0.1rem rgba($color-light-purple, 0.5);
+      }
+    }
+  }
+
+  &__link {
+    color: $color-light-purple;
+    position: relative;
+
+    &:hover {
+      color: darken($color-light-purple, 50%);
+    }
+  }
+}
