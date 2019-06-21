@@ -20,6 +20,10 @@
     &:active {
       @include button-active-effect;
     }
+
+    &--text-thin {
+      font-weight: 400;
+    }
   }
 
   &--secondary {

@@ -1,0 +1,18 @@
+.feature-box {
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(lighten($color-border, 40%), 0.1);
+  border-radius: $default-border-radius;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-text-lead, 0.1);
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}
