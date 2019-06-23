@@ -1,0 +1,21 @@
+.section-how {
+  width: 100%;
+  background-color: $color-white;
+  padding: 10rem 5rem;
+  display: table;
+
+  &--left {
+    display: table-cell;
+    width: 60%;
+  }
+
+  &--right {
+    display: table-cell;
+    width: 40%;
+    padding: 4rem;
+  }
+}
+
+.section-shot {
+  padding: 5rem 10rem;
+}

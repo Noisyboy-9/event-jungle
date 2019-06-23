@@ -1,3 +1,4 @@
+// MARGIN
 .u-margin-bottom-big {
   margin-bottom: 8rem;
 }
@@ -8,6 +9,16 @@
   margin-bottom: 2rem;
 }
 
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+.u-margin-top-medium {
+  margin-top: 4rem;
+}
+.u-margin-top-small {
+  margin-top: 2rem;
+}
+
 .u-margin-right-big {
   margin-right: 8rem;
 }
@@ -16,4 +27,30 @@
 }
 .u-margin-right-small {
   margin-right: 2rem;
+}
+
+// TEXT
+.u-text-center {
+  text-align: center;
+}
+
+// OTHER
+.u-no-space-between {
+  /* inline-block elements have a space in between because of the line break in the html so we set the font size to 
+  zero to simply remove that space in between*/
+  font-size: 0;
+
+  .button-1 {
+    border: 1px solid $color-light-purple;
+    border-radius: 0;
+    border-top-left-radius: $default-border-radius;
+    border-bottom-left-radius: $default-border-radius;
+  }
+
+  .button-2 {
+    border: 1px solid $color-light-purple;
+    border-radius: 0;
+    border-top-right-radius: $default-border-radius;
+    border-bottom-right-radius: $default-border-radius;
+  }
 }
