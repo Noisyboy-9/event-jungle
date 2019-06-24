@@ -12,6 +12,7 @@
     background-color: $color-light-purple;
     color: $color-white;
     transition: all 0.3s;
+    text-transform: uppercase;
 
     &:hover {
       @include button-hover-effect;
