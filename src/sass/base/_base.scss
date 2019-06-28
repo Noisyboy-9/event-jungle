@@ -17,4 +17,9 @@ a:hover,
 a:active {
   outline: none;
   text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
 }

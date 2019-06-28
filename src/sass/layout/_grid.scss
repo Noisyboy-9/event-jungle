@@ -1,16 +1,14 @@
 .row {
   max-width: $grid-max-width;
-  // width: 70vw;
 
   margin: 0 auto;
   @include clearfix;
-  // display: block;
 
   &:not(:last-child) {
     margin-bottom: $vertical-gutter;
   }
 
-  [class*='col-'] {
+  [class*="col-"] {
     float: left;
 
     &:not(:last-child) {

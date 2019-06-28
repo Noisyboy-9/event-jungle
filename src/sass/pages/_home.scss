@@ -17,6 +17,7 @@
 }
 
 .section-features {
+  padding: 0 6rem;
   img {
     width: 47vw;
   }
@@ -28,13 +29,17 @@
 
 .section-number {
   padding: 6rem 5rem;
-  background-image: url('img/Mask Group 1@2x.png');
+  background-image: url("img/Mask Group 1@2x.png");
 }
 
 .section-faq {
-  padding: 4rem 6rem;
+  padding: 8rem 6rem;
 
   img {
     width: 47vw;
   }
+}
+
+.section-plan {
+  padding: 4rem 8rem;
 }
