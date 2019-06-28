@@ -15,6 +15,7 @@
   &__title {
     color: $color-dark-purple;
     font-size: 1.6rem;
+    cursor: pointer;
   }
 
   &__icon {
@@ -30,14 +31,13 @@
   }
 
   &__content {
-    border-right: 1px solid rgba(transparent, 0.1);
-    border-left: 1px solid rgba(transparent, 0.1);
-    border-bottom: 1px solid rgba(transparent, 0.1);
+    border-right: 1px solid rgba(transparent, 0);
+    border-left: 1px solid rgba(transparent, 0);
+    border-bottom: 1px solid rgba(transparent, 0);
     padding: 0.5rem 2rem;
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
-    border: 0;
 
     &--active {
       max-height: 12.3rem;
