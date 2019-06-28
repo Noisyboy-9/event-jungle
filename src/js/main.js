@@ -13,3 +13,9 @@ new Accordion(
   '.accordion__content',
   '.accordion__icon'
 );
+
+new Slider(
+  '.slider__slide',
+  '#slider2__arrow--forward',
+  '#slider2__arrow--backward'
+);
