@@ -1,7 +1,7 @@
 .slider {
   position: relative;
   text-align: center;
-  overflow: hidden;
+  // overflow: hidden;
   height: 52rem;
   width: 67rem;
   margin: 0 auto;
@@ -9,6 +9,7 @@
 
   &__slide {
     transition: all 0.4s ease-in-out;
+    transform: translate(-678px);
   }
 
   &__navigation {

@@ -1,0 +1,49 @@
+.accordion {
+  padding: 1rem 2rem;
+
+  &__item {
+    border-radius: $default-border-radius;
+  }
+
+  &__title-box {
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(#707070, 0.1);
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__title {
+    color: $color-dark-purple;
+    font-size: 1.6rem;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+
+    &--active {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    border-right: 1px solid rgba(transparent, 0.1);
+    border-left: 1px solid rgba(transparent, 0.1);
+    border-bottom: 1px solid rgba(transparent, 0.1);
+    padding: 0.5rem 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    border: 0;
+
+    &--active {
+      max-height: 12.3rem;
+      border-right: 1px solid rgba(#707070, 0.1);
+      border-left: 1px solid rgba(#707070, 0.1);
+      border-bottom: 1px solid rgba(#707070, 0.1);
+    }
+  }
+}
