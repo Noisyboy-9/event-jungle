@@ -8,6 +8,15 @@
   line-height: 5rem;
   border-radius: $default-border-radius;
 
+  &--text {
+    color: $color-dark-purple;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: $color-light-purple;
+    }
+  }
+
   &--primary {
     background-color: $color-light-purple;
     color: $color-white;
