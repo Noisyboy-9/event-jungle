@@ -1,6 +1,10 @@
 .row {
   max-width: $grid-max-width;
 
+  @include response(phone) {
+    width: 80%;
+  }
+
   margin: 0 auto;
   @include clearfix;
 
@@ -8,23 +12,63 @@
     margin-bottom: $vertical-gutter;
   }
 
-  [class*="col-"] {
-    float: left;
+  [class*='col-'] {
+    @include response(phone) {
+      width: 100%;
+    }
 
+    float: left;
     &:not(:last-child) {
       margin-right: $horizontal-gutter;
+
+      @include response(tab-port) {
+        margin-right: 4rem;
+      }
+
+      @include response(phone) {
+        margin-right: 0;
+        margin-bottom: 6rem;
+      }
     }
   }
 
   .col-1-of-2 {
     width: calc((100% - #{$horizontal-gutter}) / 2);
+
+    @include response(phone) {
+      width: 100%;
+      display: block;
+    }
   }
 
   .col-1-of-3 {
     width: calc((100% - 2 * #{$horizontal-gutter}) / 3);
+
+    @include response(tab-port) {
+      width: 100%;
+      margin-bottom: 6rem;
+      margin-right: 0;
+      display: block;
+    }
+
+    @include response(phone) {
+      width: 100%;
+      display: block;
+    }
   }
 
   .col-1-of-4 {
     width: calc((100% - 3 * #{$horizontal-gutter}) / 4);
+
+    @include response(tab-port) {
+      width: 40%;
+      margin-left: 3rem;
+      margin-bottom: 6rem;
+    }
+
+    @include response(phone) {
+      width: 100%;
+      margin-bottom: 6rem;
+    }
   }
 }
