@@ -7,12 +7,25 @@
   &--left {
     display: table-cell;
     width: 60%;
+
+    @include response(tab-port) {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &--right {
     display: table-cell;
     width: 40%;
     padding: 4rem;
+
+    @include response(tab-port) {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 }
 
@@ -29,7 +42,7 @@
 
 .section-number {
   padding: 6rem 5rem;
-  background-image: url('img/Mask Group 1@2x.png');
+  background-image: url("img/Mask Group 1@2x.png");
 }
 
 .section-faq {

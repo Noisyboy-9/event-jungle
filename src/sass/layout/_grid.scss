@@ -1,34 +1,27 @@
 .row {
   max-width: $grid-max-width;
-
-  @include response(phone) {
-    width: 80%;
-  }
-
   margin: 0 auto;
   @include clearfix;
 
   &:not(:last-child) {
     margin-bottom: $vertical-gutter;
+
+    @include response(tab-port) {
+      margin-bottom: 0rem;
+    }
+  }
+
+  @include response(tab-port) {
+    width: 100%;
   }
 
   [class*='col-'] {
-    @include response(phone) {
-      width: 100%;
-    }
-
     float: left;
+    // background-color: blue;
     &:not(:last-child) {
       margin-right: $horizontal-gutter;
 
-      @include response(tab-port) {
-        margin-right: 4rem;
-      }
-
-      @include response(phone) {
-        margin-right: 0;
-        margin-bottom: 6rem;
-      }
+      // changing margin right for making it responsive in each specific col
     }
   }
 
@@ -37,7 +30,8 @@
 
     @include response(phone) {
       width: 100%;
-      display: block;
+      margin-right: 0;
+      margin-bottom: 4rem;
     }
   }
 
@@ -46,14 +40,9 @@
 
     @include response(tab-port) {
       width: 100%;
-      margin-bottom: 6rem;
+      display: block;
       margin-right: 0;
-      display: block;
-    }
-
-    @include response(phone) {
-      width: 100%;
-      display: block;
+      margin-bottom: 4rem;
     }
   }
 
@@ -62,13 +51,12 @@
 
     @include response(tab-port) {
       width: 40%;
-      margin-left: 3rem;
-      margin-bottom: 6rem;
     }
 
     @include response(phone) {
       width: 100%;
-      margin-bottom: 6rem;
+      margin-right: 0;
+      margin-bottom: 4rem;
     }
   }
 }
