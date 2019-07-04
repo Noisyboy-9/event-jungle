@@ -31,8 +31,24 @@
 
 .section-features {
   padding: 0 6rem;
+
   img {
     width: 47vw;
+
+    @include response(tab-port) {
+      width: 60vw;
+    }
+  }
+
+  @include response(tab-port) {
+    text-align: center;
+  }
+
+  .col-1-of-2 {
+    @include response(tab-port) {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
   }
 }
 
@@ -42,19 +58,32 @@
 
 .section-number {
   padding: 6rem 5rem;
-  background-image: url("img/Mask Group 1@2x.png");
+  background-image: url('img/Mask Group 1@2x.png');
 }
 
 .section-faq {
   padding: 8rem 6rem;
 
+  @include response(phone) {
+    text-align: center;
+  }
+
+
   img {
     width: 47vw;
+
+    @include response(phone) {
+      width: 75vw;
+    }
   }
 }
 
 .section-plan {
   padding: 4rem 8rem;
+
+  @include response(tab-port) {
+    text-align: center;
+  }
 }
 
 .section-testimonial {
@@ -63,4 +92,8 @@
 
 .section-events {
   padding: 0rem 12rem 10rem 12rem;
+
+  @include response(tab-port) {
+    text-align: center;
+  }
 }

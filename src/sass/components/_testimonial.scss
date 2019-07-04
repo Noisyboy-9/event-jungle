@@ -2,8 +2,15 @@
   box-shadow: 0.5rem 0.5rem 1rem rgba($color-dark-purple, 0.1);
   margin-top: 10rem;
   padding: 3rem 5rem;
-  width: 648px;
-  border: 1px solid rgba(#707070, 0.1);
+  width: 64.8rem;
   margin-right: 3rem;
+  border: 1px solid rgba(#707070, 0.1);
+
   border-radius: $default-border-radius + 1;
+
+  @include response(phone) {
+    width: 40rem;
+    margin-right: 0rem;
+
+  }
 }

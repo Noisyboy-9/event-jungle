@@ -15,7 +15,7 @@ new Accordion(
 );
 
 new Slider(
-  '.slider__slide',
+  '.slider2__slide',
   '#slider2__arrow--forward',
   '#slider2__arrow--backward'
 );

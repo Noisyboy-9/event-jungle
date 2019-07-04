@@ -4,6 +4,11 @@ export default class Slider {
   constructor(slides, nextBtn, prevBtn) {
     this._slides = document.querySelectorAll(slides);
 
+    //GETTING THE IMAGES WIDTH FOR TRANSLATION
+    this._translation = document.querySelector('.slider__content').offsetWidth;
+
+    // console.log(this._slides[0].querySelector('.slider__content'));
+
     this._nextBtn = document.querySelector(nextBtn);
     this._prevBtn = document.querySelector(prevBtn);
 
@@ -31,7 +36,8 @@ export default class Slider {
     }
 
     this._slides.forEach(slide => {
-      slide.style.transform = 'translate(' + this._counter * -678 + 'px)';
+      slide.style.transform = `translate(${this._counter *
+        -this._translation}px)`;
     });
   }
 
@@ -43,7 +49,8 @@ export default class Slider {
     }
 
     this._slides.forEach(slide => {
-      slide.style.transform = 'translate(' + this._counter * -678 + 'px)';
+      slide.style.transform = `translate(${this._counter *
+        -this._translation}px)`;
     });
   }
 }
